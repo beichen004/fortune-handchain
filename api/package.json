@@ -2,13 +2,11 @@
   "name": "fortune-handchain-api",
   "version": "1.0.0",
   "description": "Fortune handchain API",
-  "main": "index.js",
+  "main": "test_flask.py",
   "scripts": {
-    "start": "node index.js"
+    "start": "python test_flask.py"
   },
   "dependencies": {
-    "express": "^4.18.2"
-  },
-  "author": "cjbpzqif",
-  "license": "MIT"
+    "flask": "^3.0.0"
+  }
 }
