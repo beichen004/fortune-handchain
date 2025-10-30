@@ -10,7 +10,7 @@ FORTUNES = {
 }
 
 @app.route('/api/fortune/daily/<sign>/<day>')
-def get_fortune(sign, day):
+1516def get_fortune(sign, day):
     fortune = FORTUNES.get(sign.lower(), {}).get(day.lower(), "暂无运势")
     return jsonify({"sign": sign, "day": day, "fortune": fortune})
 
