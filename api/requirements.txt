@@ -14,6 +14,7 @@ Jinja2==3.1.6
 macholib @ file:///AppleInternal/Library/BuildRoots/4~B7IEugDHS-fAL-bTRqAKCb_qmc84naJzmK7469Q/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
 MarkupSafe==3.0.3
 requests==2.32.5
+serverless-wsgi==3.1.0
 six @ file:///AppleInternal/Library/BuildRoots/4~B7IEugDHS-fAL-bTRqAKCb_qmc84naJzmK7469Q/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
 soupsieve==2.8
 typing_extensions==4.15.0
