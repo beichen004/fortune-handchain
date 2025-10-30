@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("sign").textContent = sign;
   document.getElementById("day").textContent = day;
 
-  // 关键：使用 Vercel 后端域名
-const apiUrl = "https://fortune-handchain-api-git-main-feifeizhengs-projects.vercel.app/api/fortune/daily/" + sign + "/" + day;
+  const apiUrl = `https://fortune-handchain-api-git-main-feifeizhengs-projects.vercel.app/api/fortune/daily/${sign}/${day}`;
+
   fetch(apiUrl)
     .then(response => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);

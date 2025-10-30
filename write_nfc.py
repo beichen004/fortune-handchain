@@ -1,18 +1,14 @@
 import nfc
-import ndef
+import time
 
-url = 'https://your-fortune.vercel.app?sign=aries&day=today'  # 
-替换为你的前端URL
-title = '每日运势'
+FRONTEND_URL = "https://fortune-handchain-web-git-main-feifeizhengs-projects.vercel.app?sign=aries&day=today"
 
-clf = nfc.ContactlessFrontend('usb')
-print("请将NFC标签靠近读写器...")
-tag = clf.connect(rdwr={'on-connect': lambda tag: False})
+def on_connect(tag):
+    print("NFC 标签已连接！")
+    tag.ndef.message = nfc.ndef.UriRecord(FRONTEND_URL)
+    print(f"已写入 URL: {FRONTEND_URL}")
+    return True
 
-if tag:
-    record = ndef.SmartposterRecord(url, title)
-    message = [record]
-    tag.ndef.records = message
-    print("URL已成功写入标签！")
-clf.close()
-
+print("请将 NFC 标签靠近读卡器...")
+with nfc.ContactlessFrontend('usb') as clf:
+    clf.connect(rdwr={'on-connect': on_connect})

@@ -4,32 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>你的每日运势</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-      background: linear-gradient(to bottom, #ffeef8, #e6f7ff);
-      color: #333;
-    }
-    h1 { color: #d81b60; }
-    .info { font-size: 1.2em; margin: 10px; }
-    #fortune { 
-      font-size: 1.5em; 
-      margin-top: 20px; 
-      color: #1976d2;
-      min-height: 1.5em;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>你的每日运势</h1>
-  
-  <div class="info">星座: <span id="sign">加载中...</span></div>
-  <div class="info">日期: <span id="day">加载中...</span></div>
-  
-  <div id="fortune">加载中...</div>
-
+  <div class="container">
+    <h1>你的每日运势</h1>
+    <p>星座: <span id="sign">Loading...</span></p>
+    <p>日期: <span id="day">Loading...</span></p>
+    <p id="fortune">加载中...</p>
+  </div>
   <script src="script.js" defer></script>
 </body>
 </html>

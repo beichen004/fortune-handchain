@@ -1,3 +1,7 @@
-# force redeploy 2025年10月26日 星期日 16时08分16秒 CST
-# force redeploy 2025年10月26日 星期日 16时34分41秒 CST
-# force redeploy 2025年10月30日 星期四 09时19分47秒 CST
+# Fortune Handchain
+
+一个通过 NFC 手链获取每日运势的 Web 项目。
+
+## 部署
+- 后端：https://fortune-handchain-api-git-main-feifeizhengs-projects.vercel.app
+- 前端：https://fortune-handchain-web-git-main-feifeizhengs-projects.vercel.app
