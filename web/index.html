@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>Fortune Handchain</title>
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>你的每日运势</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background: linear-gradient(to bottom, #ffeef8, #e6f7ff);
+      color: #333;
+    }
+    h1 { color: #d81b60; }
+    .info { font-size: 1.2em; margin: 10px; }
+    #fortune { 
+      font-size: 1.5em; 
+      margin-top: 20px; 
+      color: #1976d2;
+      min-height: 1.5em;
+    }
+  </style>
 </head>
 <body>
-  <h1>Your Fortune</h1>
-  <p id="fortune">Loading...</p>
+  <h1>你的每日运势</h1>
+  
+  <div class="info">星座: <span id="sign">加载中...</span></div>
+  <div class="info">日期: <span id="day">加载中...</span></div>
+  
+  <div id="fortune">加载中...</div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
