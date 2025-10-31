@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # 允许跨域
 
 FORTUNES = {
     "aries": {"today": "白羊座今天运势大好，适合大胆行动！"},
@@ -16,4 +16,7 @@ def get_fortune(sign, day):
 
 @app.route('/')
 def home():
-    return jsonify({"message": "API running"})
+    return jsonify({"message": "API running!"})
+
+if __name__ == '__main__':
+    app.run()
