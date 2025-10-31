@@ -1,14 +1,19 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
+  "version": 2,
   "builds": [
     {
-      "src": "web/index.html",
-      "use": "@vercel/static"
+      "src": "api/test_flask.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/test_flask.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/web/$1"
     }
   ]
 }
