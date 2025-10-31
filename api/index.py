@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # 关键：允许所有来源
+CORS(app)
 
 FORTUNES = {
     "aries": {"today": "白羊座今天运势大好，适合大胆行动！"},
